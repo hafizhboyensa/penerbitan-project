@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 const CheckIcon = ({ className = "w-4 h-4 shrink-0" }) => (
   <svg
@@ -571,18 +572,18 @@ export default function LandingPage() {
           </nav>
 
           <div className="flex items-center gap-2 shrink-0">
-            <button
-              type="button"
-              className="cursor-pointer whitespace-nowrap px-3.5 h-10 rounded-lg text-[#314158] hover:bg-slate-100 transition-colors text-sm font-semibold"
+            <Link
+              to="/login"
+              className="cursor-pointer whitespace-nowrap flex items-center px-3.5 h-10 rounded-lg text-[#314158] hover:bg-slate-100 transition-colors text-sm font-semibold"
             >
               Masuk
-            </button>
-            <button
-              type="button"
-              className="cursor-pointer whitespace-nowrap px-4 h-10 rounded-lg bg-[#1E3A5F] hover:bg-[#172E4B] transition-colors text-white text-sm font-semibold shadow-[0_1px_3px_0_rgba(0,0,0,0.1),0_1px_2px_-1px_rgba(0,0,0,0.1)]"
+            </Link>
+            <Link
+              to="/register"
+              className="cursor-pointer whitespace-nowrap flex items-center px-4 h-10 rounded-lg bg-[#1E3A5F] hover:bg-[#172E4B] transition-colors text-white text-sm font-semibold shadow-[0_1px_3px_0_rgba(0,0,0,0.1),0_1px_2px_-1px_rgba(0,0,0,0.1)]"
             >
               Daftar
-            </button>
+            </Link>
           </div>
         </div>
       </header>
